@@ -1,6 +1,5 @@
 import React, { useCallback } from "react"
 import Age from "./Age"
-import Counter from "./Age"
 import Salary from "./Salary"
 
 const ReactCallback = () => {

@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import TwoWayUseStarteEmpObjectBidning from  './UseStateTwoWayBinding/TwoWayUseStarteEmpObjectBidning';
-import TwoWayBindingUseStateTestCount from './UseStateTwoWayBinding/TwoWayBindingUseStateTestCount'
+import RoutingComponent from './ReactRouter/RoutingComponent'
 function App() {
   return (
     <div>
-    <TwoWayUseStarteEmpObjectBidning></TwoWayUseStarteEmpObjectBidning>
-    <TwoWayBindingUseStateTestCount></TwoWayBindingUseStateTestCount>
+    <RoutingComponent></RoutingComponent>
     </div>
   );
 }

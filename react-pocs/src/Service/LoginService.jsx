@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { authentication } from '../Auth/Authentication';
+import { authentication } from '../Service/authentication';
 
 function Login(props) {
 
