@@ -1,0 +1,17 @@
+.div1 {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    border: 2px solid grey;
+    min-height: 800px;
+    padding: 20px;
+  }
+
+  .backgroundColorForPM{
+    background-color: blue;
+
+  }
+    .backgroundColorForAM{
+    background-color: red;
+
+  }
