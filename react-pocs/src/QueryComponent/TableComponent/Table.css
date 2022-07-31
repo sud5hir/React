@@ -1,0 +1,24 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(231, 84, 16);  
+    width: 1000px;
+}
+
+table, tr, td {
+    border: 3px solid white;  
+  }  
+  tr,td{
+        text-align: center;
+    background-color: #f2f2f2;    
+   padding: 12px 13px 14px 15px ;
+   color: rgb(53, 53, 90)
+  
+  }
+  
+ th {
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    background-color: rgb(231, 84, 16);    
+    color: #fff;    
+  }   

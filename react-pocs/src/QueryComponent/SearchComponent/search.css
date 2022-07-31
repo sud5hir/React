@@ -1,0 +1,16 @@
+.divSearch{
+    margin-left: 820px;
+    margin-top:30px ;
+    border: 2px solid rgb(231, 84, 16); 
+    width: 212px;
+    }
+    .Searchbutton{
+      height: 30px;
+      width: 35px;
+      color: red;
+    }  
+    input{
+      height:24px;
+      width: 30 px;
+   
+    }  

@@ -1,0 +1,42 @@
+/* .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+    
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+  } */
+
+  .twoway
+  {
+    display: inline-block;
+    border: 1px solid rgb(241, 233, 233) ;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .plusinput
+  {
+   width: 37px;
+   height:28px;
+    background-color: rgb(250, 64, 64);
+    color: white;
+  }
+  .input{
+    width: 33px;
+   height: 22px;
+   color: red;
+   text-align: center;  
+    background-color: rgb(233, 195, 195);
+  }
+  .minusinput
+  {  
+    width: 36px;
+    height:28px;
+       background-color: white;
+    color: red;
+  }
