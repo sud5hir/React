@@ -1,5 +1,5 @@
 import React from 'react';
-import CounterStateClassComp from './CounterStateClassComp';
+import CounterStateClassComp from '../PropsStateParentChild/CounterStateClassComp';
 import LoaderComponent from './LoaderComponent';
 
 export default class ConditionalRenderingComponent extends React.Component {

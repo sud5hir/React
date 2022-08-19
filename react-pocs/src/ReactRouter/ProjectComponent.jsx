@@ -38,7 +38,7 @@ export default function ProjectComponent(props) {
                 <Route exact path={path}>
                     <h3>Please select a topic.</h3>
                 </Route>
-                <Route path={`${props.match.path}/:id`} component={ProjectDetailsComponent} >
+                <Route path={`${props.match.path}/:id`} element={<ProjectDetailsComponent/>} >
                 </Route>
             </Routes>
         </div>

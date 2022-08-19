@@ -11,8 +11,12 @@ import ReactUseRef from '../UseRef/ReactUseRef';
 import ProjectComponent from './ProjectComponent';
 import SecuredRoute from './secureroute';
 import './Routing.css';
+import EmployeeComponent from '../PropsStateParentChild/EmployeeComponent';
 const UseMemoComponent = React.lazy(() => import('../ReactMemo/CounterReactMemo'));
 const OtherComponent = React.lazy(() => import('../ReduxBasic/ReduxBasic'));
+const ProductCartComponent = React.lazy(() => import('../ReduxBasic/RedeucerRoutingComponent'));
+const ProductComponent = React.lazy(() => import('../ReduxBasic/ProductComponent'));
+const CartComponent = React.lazy(() => import('../ReduxBasic/CartComponent'));
 
 export default function RoutingComponent() {
     return (
@@ -33,8 +37,13 @@ export default function RoutingComponent() {
             <SecuredRoute/>            
           }
         />
-                    <Route path='/ReactMemo'element={<CounterReactMemo />} />    
-                      
+                 {/* <Route path='/ConditionalRendering'   element={
+            <ConditionalRenderingComponent/>            
+          }
+        /> */}
+                    <Route path='/ReactMemo'element={<CounterReactMemo />} />  
+                    <Route path='/EmpSalaryComp'element={<EmployeeComponent Id={1} Name={'Sudhir'} Location={'Pune'} Salary={100}/>} /> 
+                                           
                     <Route path='/UseCallback' element={<ReactCallback />} />    
                       
                     <Route path='/UseRef' element={<ReactUseRef />} />    
@@ -54,6 +63,23 @@ export default function RoutingComponent() {
               </React.Suspense>
             }
           />
+            <Route
+            path="ProductCartRedux"
+            element={
+              <React.Suspense fallback={<div>Loading...</div>}>
+                <ProductCartComponent />
+              </React.Suspense>
+            }       >                                       
+                                             
+                             <Route path='products' 
+                             element={<ProductComponent />}
+                              />                     
+                          <Route path='carts' 
+                             element={<CartComponent />}
+                              />                    
+                              </Route>
+                             
+                                    
                     {/* <Suspense fallback={<div>Loading...</div>}>
                    
                         <Route path='/UseMemo' element={<UseMemoComponent />} />    

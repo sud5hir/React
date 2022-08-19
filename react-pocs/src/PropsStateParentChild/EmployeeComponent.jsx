@@ -2,7 +2,6 @@ import React from 'react';
 import SalaryComponent from './SalaryComponent';
 
 export default class EmployeeComponent extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = { updatedSalary: 0 };
@@ -40,7 +39,7 @@ export default class EmployeeComponent extends React.Component {
                 <label>Updated Salary : <b>{this.state.updatedSalary}</b></label>
             </p>
 
-            <SalaryComponent BasicSalary={this.props.BasicSalary} HRA={this.props.HRA} SpecialAllowance={this.props.SpecialAllowance} onSalaryChanged={this.getUpdatedSalary}></SalaryComponent>
+            <SalaryComponent BasicSalary={this.props.Salary} HRA={this.props.HRA} SpecialAllowance={this.props.SpecialAllowance} onSalaryChanged={this.getUpdatedSalary}></SalaryComponent>
         </div>
     }
 }

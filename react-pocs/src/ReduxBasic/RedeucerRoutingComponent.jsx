@@ -22,27 +22,28 @@ class RedeucerRoutingComponent extends Component {
     render() {
         return (
             <>
-                <BrowserRouter>
+                {/* <BrowserRouter> */}
                     <Provider store={store}>
                         <div >
-                            <div> <Link to="/">products</Link></div>
-                            <div><Link to="/carts">Cart</Link></div>
+                            <div> <Link to='/'>products</Link></div>
+                            
+                            <div><Link to='/carts'>Carts</Link></div>
                             {/* <div><NavLink activeClassName="testClass" to="/Project1">Project1</NavLink></div> */}
                         </div>
-                        <Routes>
+                      
                             {/* localhost:3000 */}
-                            <Route exact path="/" >
-                                <ProductComponent></ProductComponent>
-                            </Route>
-                            <Route path="/products" >
-                                <ProductComponent></ProductComponent>
-                            </Route>
-                            <Route path="/carts" >
-                                <CartComponent></CartComponent>
-                            </Route>
-                        </Routes>
+                            {/* <Route exact path='/'
+                            element={<ProductComponent />}                              
+                            />    */}
+                             {/* <Route path='/products' 
+                             element={<ProductComponent />}
+                              />                     
+                          <Route path='/carts' 
+                             element={<CartComponent />}
+                              />                             */}
+                       
                     </Provider>
-                </BrowserRouter>
+                {/* </BrowserRouter> */}
             </>
         )
     }
